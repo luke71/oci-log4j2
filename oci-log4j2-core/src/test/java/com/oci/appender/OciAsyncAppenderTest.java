@@ -30,6 +30,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
+import com.oci.client.OciLoggingClient;
+import com.oci.client.OciLoggingClientImpl;
+
 import com.oracle.bmc.loggingingestion.responses.PutLogsResponse;
 
 import java.io.Serializable;

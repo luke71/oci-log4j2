@@ -1,4 +1,4 @@
-package com.oci.appender;
+package com.oci.client;
 
 import com.oracle.bmc.loggingingestion.requests.PutLogsRequest;
 import com.oracle.bmc.loggingingestion.responses.PutLogsResponse;

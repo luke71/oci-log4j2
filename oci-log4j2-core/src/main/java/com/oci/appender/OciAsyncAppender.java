@@ -23,6 +23,9 @@ import org.apache.logging.log4j.core.config.plugins.*;
 import org.apache.logging.log4j.core.layout.PatternLayout;
 import org.apache.logging.log4j.message.SimpleMessage;
 
+import com.oci.client.OciLoggingClient;
+import com.oci.client.OciLoggingClientImpl;
+
 import com.oracle.bmc.ConfigFileReader;
 import com.oracle.bmc.auth.AbstractAuthenticationDetailsProvider;
 import com.oracle.bmc.auth.ConfigFileAuthenticationDetailsProvider;

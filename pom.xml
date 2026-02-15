@@ -12,6 +12,14 @@
         </license> 
     </licenses>
 
+    <developers>
+        <developer>
+        <name>Luca Scarpa</name>
+        <email>luca.scarpa.luke71@proton.me</email>
+        <organizationUrl>https://github.com/luke71</organizationUrl>
+        </developer>
+    </developers>
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.oci.appender</groupId>
