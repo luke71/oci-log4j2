@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.oci.appender.OciAsyncAppenderTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.50 s -- in com.oci.appender.OciAsyncAppenderTest

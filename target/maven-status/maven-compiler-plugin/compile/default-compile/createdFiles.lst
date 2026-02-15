@@ -1,5 +1,0 @@
-com/oci/appender/OciAsyncAppender.class
-com/oci/appender/OciAsyncAppender$State.class
-com/oci/appender/OciLoggingClient.class
-com/oci/appender/OciLoggingClientImpl.class
-com/oci/appender/OciAsyncAppender$LogMessage.class
