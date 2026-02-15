@@ -370,7 +370,7 @@ public class OciAsyncAppender extends AbstractAppender {
                 System.err.println("[OCI-APPENDER-ERROR]  too many failures: cannot flush "+queue.size()+"messages");
             }
         } finally {
-            client.close();
+            getClient().close();
         }
         return super.stop(timeout,timeUnit);
     }
