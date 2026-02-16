@@ -19,10 +19,11 @@
     </developers>
 
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>io.github.luke71</groupId>
         <artifactId>oci-log4j2</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>oci-log4j2-core</artifactId>
