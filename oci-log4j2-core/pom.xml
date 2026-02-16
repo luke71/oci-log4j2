@@ -53,13 +53,13 @@
         <dependency>
             <groupId>com.oracle.oci.sdk</groupId>
             <artifactId>oci-java-sdk-loggingingestion</artifactId>
-            <version>3.44.0</version>
+            <version>3.80.1</version>
         </dependency>
 
         <dependency> 
             <groupId>com.oracle.oci.sdk</groupId> 
-            <artifactId>oci-java-sdk-common-httpclient-jersey</artifactId> 
-            <version>3.44.0</version> 
+            <artifactId>oci-java-sdk-common-httpclient-jersey3</artifactId> 
+            <version>3.80.1</version> 
         </dependency>
 
         <!-- JUnit 5 -->

@@ -13,6 +13,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     public static void main(String[] args) throws Exception {
+        System.out.println("MAIN TEST STARTED RUNNING ON"+System.getProperty("java.version"));
 
         logger.info("Starting OCI Log4j2 example app... with log4j.configurationFile:"+System.getProperty("log4j.configurationFile"));
 

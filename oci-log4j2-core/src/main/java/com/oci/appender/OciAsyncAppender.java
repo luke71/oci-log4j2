@@ -145,7 +145,7 @@ public class OciAsyncAppender extends AbstractAppender {
                 //No Config file trying Resource principal, this works if you run in VM on oci or OKE
                 provider = ResourcePrincipalAuthenticationDetailsProvider.builder().build();
             }
-            this.client = new OciLoggingClientImpl(LoggingClient.builder().build(provider));
+            this.client = new OciLoggingClientImpl(provider);
         } catch (Exception e) {
             throw new RuntimeException("Error initializing OCI LoggingClient", e);
         }
@@ -373,7 +373,9 @@ public class OciAsyncAppender extends AbstractAppender {
                 System.err.println("[OCI-APPENDER-ERROR]  too many failures: cannot flush "+queue.size()+"messages");
             }
         } finally {
+            sysoutTrace("Closing client");
             getClient().close();
+            sysoutTrace("Client closed");
         }
         return super.stop(timeout,timeUnit);
     }
