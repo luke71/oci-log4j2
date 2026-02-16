@@ -28,6 +28,6 @@ jobs:
       - name: Build and deploy
         run: mvn -B clean deploy -P release
         env:
-          MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
-          MAVEN_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
+          MAVEN_USERNAME: ${{ secrets.MAVEN_USER_SECRET }}
+          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD_SECRET }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
