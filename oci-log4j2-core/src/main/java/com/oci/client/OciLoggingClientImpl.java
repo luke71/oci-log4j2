@@ -6,11 +6,13 @@ import com.oracle.bmc.loggingingestion.responses.PutLogsResponse;
 import com.oracle.bmc.auth.AbstractAuthenticationDetailsProvider;
 
 
+
 public class OciLoggingClientImpl implements OciLoggingClient { 
     private final LoggingClient client; 
     public OciLoggingClientImpl(AbstractAuthenticationDetailsProvider provider) {
-        this.client = LoggingClient.builder().build(provider);
+        this.client = LoggingClient.builder().build(provider);   
     } 
+
     @Override 
     public PutLogsResponse putLogs(PutLogsRequest request) { 
         return client.putLogs(request); 

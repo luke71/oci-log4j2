@@ -5,7 +5,7 @@
 
         <OciAsyncAppender name="OCI"
                           logId="ocid1.log.oc1.eu-milan-1.amaaaaaafw2z5sqalbhdfdvb6jfuha6k2g4wya7najkpylbf5bi5ly5wt3aa"
-                          configFile="/Users/l.scarpa/.oci/config"
+                          configFile="/Users/luke/.oci/config"
                           profile="DEFAULT"
                           batchSize="10"
                           flushIntervalMs="2000"

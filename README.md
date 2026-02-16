@@ -56,3 +56,19 @@ fingerprint=xx:xx:xx
 key_file=/path/to/oci_api_key.pem
 tenancy=ocid1.tenancy.oc1...
 region=eu-frankfurt-1
+
+
+
+## Known Issue: UTF-8 Utility Thread in OCI Java SDK ≥ 3.66.0
+
+Starting from version **3.66.0** of the OCI Java SDK, Jersey introduces an internal
+non-daemon thread named **`utf8-utils-*`**. This thread is created by the underlying
+HTTP/Jersey infrastructure and **cannot be terminated through any public API** provided
+by the SDK.
+
+When running applications via the **`maven-exec-plugin`**, this thread may appear as
+“pending” during JVM shutdown. This is a cosmetic warning specific to the Maven plugin
+and **does not affect the actual shutdown or behavior of the application**.
+
+Version **3.65.1** is the last release of the OCI Java SDK that does not exhibit this
+behavior.

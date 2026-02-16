@@ -22,17 +22,17 @@ import org.apache.logging.log4j.core.config.Property;
 import org.apache.logging.log4j.core.config.plugins.*;
 import org.apache.logging.log4j.core.layout.PatternLayout;
 import org.apache.logging.log4j.message.SimpleMessage;
+import org.glassfish.jersey.client.JerseyClient;
 
 import com.oci.client.OciLoggingClient;
 import com.oci.client.OciLoggingClientImpl;
-
+import com.oracle.bmc.ClientRuntime;
 import com.oracle.bmc.ConfigFileReader;
 import com.oracle.bmc.auth.AbstractAuthenticationDetailsProvider;
 import com.oracle.bmc.auth.ConfigFileAuthenticationDetailsProvider;
 import com.oracle.bmc.auth.ResourcePrincipalAuthenticationDetailsProvider;
 import com.oracle.bmc.loggingingestion.LoggingClient;
 import com.oracle.bmc.loggingingestion.model.*;
-import com.oracle.bmc.loggingingestion.model.LogEntry;
 import com.oracle.bmc.loggingingestion.requests.PutLogsRequest;
 import com.oracle.bmc.util.VisibleForTesting;
 
@@ -379,7 +379,7 @@ public class OciAsyncAppender extends AbstractAppender {
         }
         return super.stop(timeout,timeUnit);
     }
-
+    
     private final OciLoggingClient getClient() {
         if (client!=null) return client;
         if (isTest) return testClient;
