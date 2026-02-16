@@ -23,7 +23,7 @@
     <parent>
         <groupId>io.github.luke71</groupId>
         <artifactId>oci-log4j2</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>oci-log4j2-core</artifactId>
