@@ -18,6 +18,17 @@
         </developer>
     </developers>
 
+    <name>oci-log4j2-core</name>
+    <description>Core implementation of the Log4j2 appender for Oracle Cloud Infrastructure Logging</description>
+    <url>https://github.com/luke71/oci-log4j2</url>
+
+    <scm>
+        <url>https://github.com/luke71/oci-log4j2</url>
+        <connection>scm:git:https://github.com/luke71/oci-log4j2.git</connection>
+        <developerConnection>scm:git:git@github.com:luke71/oci-log4j2.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
