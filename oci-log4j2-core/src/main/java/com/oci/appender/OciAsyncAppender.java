@@ -31,6 +31,7 @@ import com.oracle.bmc.ConfigFileReader;
 import com.oracle.bmc.auth.AbstractAuthenticationDetailsProvider;
 import com.oracle.bmc.auth.ConfigFileAuthenticationDetailsProvider;
 import com.oracle.bmc.auth.ResourcePrincipalAuthenticationDetailsProvider;
+import com.oracle.bmc.auth.InstancePrincipalsAuthenticationDetailsProvider;
 import com.oracle.bmc.loggingingestion.LoggingClient;
 import com.oracle.bmc.loggingingestion.model.*;
 import com.oracle.bmc.loggingingestion.requests.PutLogsRequest;
@@ -143,7 +144,8 @@ public class OciAsyncAppender extends AbstractAppender {
             } else {
                 sysoutTrace("Using resource principal ignoreExceptions:"+ignoreExceptions);
                 //No Config file trying Resource principal, this works if you run in VM on oci or OKE
-                provider = ResourcePrincipalAuthenticationDetailsProvider.builder().build();
+                //provider = ResourcePrincipalAuthenticationDetailsProvider.builder().build();
+                provider = InstancePrincipalsAuthenticationDetailsProvider.builder().build();
             }
             this.client = new OciLoggingClientImpl(provider);
         } catch (Exception e) {
