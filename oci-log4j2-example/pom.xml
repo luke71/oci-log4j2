@@ -35,7 +35,7 @@
     <parent>
         <groupId>io.github.luke71</groupId>
         <artifactId>oci-log4j2</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </parent>
 
     <artifactId>oci-log4j2-example</artifactId>
@@ -46,7 +46,7 @@
         <dependency>
             <groupId>io.github.luke71</groupId>
             <artifactId>oci-log4j2-core</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
 
         <!-- Log4j2 API -->
