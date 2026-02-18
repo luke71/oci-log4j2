@@ -1,6 +1,6 @@
 # OCI Log4j2 Async Appender
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.oci.appender/oci-log4j2.svg?label=Maven%20Central)](https://search.maven.org/artifact/com.oci.appender/oci-log4j2)
+[![MvnRepository](https://badges.mvnrepository.com/badge/io.github.luke71/oci-log4j2/badge.svg?label=MvnRepository)](https://mvnrepository.com/artifact/io.github.luke71/oci-log4j2)
 
 
 An asynchronous Log4j2 appender that sends logs to **Oracle Cloud Infrastructure Logging Ingestion** using batching, periodic flushing, and backpressure handling.
