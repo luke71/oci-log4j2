@@ -27,7 +27,7 @@ and this project adheres to **Semantic Versioning**.
 - Log4j2 plugin factory and XML configuration support
 - Complete documentation and licensing
 
-## [1.0.0] - 2026-02-18
+## [1.0.2] - 2026-02-18
 ### Fixed
 - First stable release of `oci-log4j2` working on oke without oci conf using InstancePrincipalsAuthenticationDetailsProvider
 - Using Jersey3
